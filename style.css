@@ -5,7 +5,7 @@
 }
 
 section { 
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -17,4 +17,40 @@ section {
 
 .form-box {
   position: relative;
-  
+  width: 400px; 
+  height: 450px;
+  background: transparent;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+input:focus ~ label {
+  top: -5px;
+}
+input:valid ~ 
